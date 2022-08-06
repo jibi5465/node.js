@@ -1,8 +1,8 @@
 const http = require('http');
 const fs = require('fs')
 
-const indexPage = fs.readFileSync(`${__dirname}/my/templates/index.html`,'utf-8')
-const productPage = fs.readFileSync(`${__dirname}/my/templates/information.html`,'utf-8')
+const indexPage = fs.readFileSync(`${__dirname}/templates/index.html`,'utf-8')
+const productPage = fs.readFileSync(`${__dirname}/templates/information.html`,'utf-8')
 
 const server = http.createServer((req, res)=>{
     const pathName = req.url
